@@ -1,0 +1,173 @@
+:root {
+    --FORR: rgba(255, 234, 167, 0.7);
+    --FORK: rgba(253, 121, 168, 0.7);
+    --GAGN: rgba(85, 239, 196, 0.7);
+    --KEST: rgba(178, 190, 195, 0.7);
+    --ROBO: rgba(250, 177, 160, 0.7);
+    --VEFÞ: rgba(129, 236, 236, 0.7);
+    --CORE: rgba(214, 48, 49, 0.7);
+    --VAL: rgba(240, 240, 240, 0.7);
+    --EÐLI: rgba(255, 118, 117, 0.7);
+    --STÆR: var(--EÐLI);
+    --ONN1: rgba(108, 92, 231, 0.7);
+    --ONN2: rgba(9, 132, 227, 0.7);
+    --ONN3: rgba(0, 184, 148, 0.7);
+    --STRONG: rgba(214, 48, 49, 1.0);
+    --LINK: rgba(9, 132, 227, 1.0);
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    background: rgba(223, 230, 233, 1.0);
+    vertical-align: middle;
+    color: rgba(45, 52, 54, 1.0)
+}
+
+header {
+    font-size: 2rem;
+    text-align: center;
+}
+
+div.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-gap: 0.5rem;
+    grid-template-areas: 
+        "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG" 
+        "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH" 
+        "onn3 empty1 FORR2HF empty2 empty2 VAL KEST2UN empty3 VEFÞ2VF" 
+        "FORK2FE FORR3JS FORR2GL ROBO2RG GAGN2HS KEST3CR KEST2LG KEST2WG VEFÞ2VÞ" 
+        "FORK2FT FORR3RR FORR3FL ROBO3RF GAGN2VG KEST3CS KEST3LN KEST3WN VEFÞ3VL" 
+        "FORK2FÞ FORR4CF FORR3NÞ FORR3FV GAGN3GS KEST3CN KEST3LS KEST3WS empty4" 
+        "empty5 STÆR3FM empty51 STÆR3RV empty7 EÐLI2GR empty6 empty6 empty6"
+
+    /*         "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG"
+        "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH"
+        "onn3 empty1 FORR2HF empty2 empty2 VAL KEST2UN empty3 VEFÞ2VF"
+        "FORK2FE FORR3JS GAGN2HS FORR2GL VEFÞ2VÞ KEST3CR KEST2LG KEST2WG ROBO2RG"
+        "FORK2FT FORR3RR GAGN2VG FORR3FL VEFÞ3VL KEST3CS KEST3LN KEST3WN ROBO3RF"
+        "FORK2FÞ FORR4CF GAGN3GS FORR3NÞ FORR3FV KEST3CN KEST3LS KEST3WS empty4"
+        "empty5 STÆR3FM empty51 STÆR3RV empty7 EÐLI2GR empty6 empty6 empty6" */
+    /*         "onn1 empty1 FORR1FG05 empty empty empty KEST1TR05 empty3 VEFÞ1VG05"
+        "onn2 empty1 FORR2FA05 emptya GAGN1NG05 emptyb KEST2VJ05 empty3 VEFÞ2VH05"
+        "onn3 empty1 FORR2HF05 empty2 empty2 empty2 KEST2UN05 empty3 VEFÞ2VF05"
+        "FORK2FE02 FORR3RR05 GAGN2HS05 FORR3NÞ05 VEFÞ2VÞ05 KEST3CR05 KEST2LG05 KEST2WG05 ROBO2RG05"
+        "FORK2FT02 FORR3JS05 GAGN2VG05 FORR2GL05 VEFÞ3VL05 KEST3CS05 KEST3LN05 KEST3WN05 ROBO3RF05"
+        "FORK2FÞ02 FORR4CF05 GAGN3GS05 FORR3FL05 FORR3FV05 KEST3CN05 KEST3LS05 KEST3WS05 empty4"
+        "empty5 STÆR3FM empty51 STÆR3RV05 empty7 EÐLI2GR05 empty6 empty6 empty6" */
+    /*     "onn1 FORR1FG05 empty KEST1TR05 VEFÞ1VG05 empty3 empty3 empty3 empty3"
+        "onn2 FORR2FA05 GAGN1NG05 KEST2VJ05 VEFÞ2VH05 empty3 empty3 empty3 empty3"
+        "onn3 FORR2HF05 empty2 KEST2UN05 VEFÞ2VF05 empty3 empty3 empty3 empty3"
+        "FORK2FE02 FORR3RR05 GAGN2HS05 FORR3NÞ05 VEFÞ2VÞ05 KEST3CR05 KEST2LG05 KEST2WG05 ROBO2RG05"
+        "FORK2FT02 FORR3JS05 GAGN2VG05 FORR2GL05 VEFÞ3VL05 KEST3CS05 KEST3LN05 KEST3WN05 ROBO3RF05"
+        "FORK2FÞ02 FORR4CF05 GAGN3GS05 FORR3FL05 FORR3FV05 KEST3CN05 KEST3LS05 KEST3WS05 empty4"
+        "empty5 empty5 empty5 STÆR3RV05 empty7 EÐLI2GR05 empty6 empty6 empty6" */
+}
+
+div.afangar {
+    display: block;
+    border-radius: 10px;
+    padding: 5px 5px;
+    margin: 5px;
+    background-color: rgba(173, 215, 229, 0.7);
+    z-index: 10;
+}
+
+a {
+    color: var(--LINK);
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+strong {
+    color: var(--STRONG);
+}
+
+div.undanfarar {
+    padding: 0 0;
+    margin: 0;
+    margin-bottom: 4px;
+    text-align: left;
+    display: block;
+}
+
+h4 {
+    font-size: 0.8rem;
+    display: block;
+    text-align: center;
+    cursor: default;
+    margin-bottom: 0.8rem;
+}
+
+div.annir {
+    padding: 5px 5px;
+    margin: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+div.onn1 {
+    grid-area: onn1;
+    background: var(--ONN1);
+}
+
+div.onn2 {
+    grid-area: onn2;
+    background: var(--ONN2);
+}
+
+div.onn3 {
+    grid-area: onn3;
+    background: var(--ONN3);
+}
+
+div.VAL0 {
+    background: var(--VAL);
+}
+
+div.KEST {
+    background: var(--KEST);
+}
+
+div.FORR {
+    background: var(--FORR);
+}
+
+div.GAGN {
+    background: var(--GAGN);
+}
+
+div.VEFÞ {
+    background: var(--VEFÞ);
+}
+
+div.ROBO {
+    background: var(--ROBO);
+}
+
+div.FORK {
+    background: var(--FORK);
+}
+
+div.EÐLI,
+div.STÆR {
+    background: var(--EÐLI);
+}
