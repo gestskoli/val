@@ -23,10 +23,7 @@ class Afangi {
             if (this.id === "VAL05") {
                 undanfarar = ""; 
             }
-            for (let p of this.parents) {
-
-                undanfarar += `<div class="undanfarar ${p.id.split('0')[0].substring(0,4)}"><b>${p.name}</b><br><a target="_blank" href="${p.link}">${p.id}</a></div>`;
-            }
+            this.parents.map(p => undanfarar += `<div class="undanfarar ${p.id.split('0')[0].substring(0,4)}"><b>${p.name}</b><br><a target="_blank" href="${p.link}">${p.id}</a></div>`);
             undanfarar += `</div></div>`;
         } else {
             undanfarar = "";
