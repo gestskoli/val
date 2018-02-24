@@ -8,7 +8,8 @@ class Afangi {
         this.parents = jsonData.parents;
         this.description = jsonData.description;
         this.core = jsonData.core;
-        this.tbr = jsonData.tbr
+        this.active = jsonData.active;
+        this.tbr = jsonData.tbr;
     }
 
     get div() {

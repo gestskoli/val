@@ -6,6 +6,8 @@
     "parents": [],
     "description": "Í áfanganum fá nemendur þjálfun í forritun. Farið er í undirstöðuatriði forritunar svo sem skilyrðissetningar, slaufur, aðferðir, fylki og strengjavinnslu. Nemendur vinna verkefni í tímum sem reyna á færni þeirra og getu varðandi þessi atriði. Lögð er áhersla á að nemendur temji sér öguð og viðurkennd vinnubrögð við forritun. ",
     "core": true,
+    "active": true,
+
     "tbr": true
 }, {
     "id": "FORK2FE02(AU)",
@@ -15,15 +17,17 @@
     "parents": ["FORR1FG05(AU)"],
     "description": "Valáfangi í forritun þar sem nemendur undirbúa sig fyrir Forritunarkeppni framhaldsskólanna og lýkur áfanganum með þátttöku í forritunarkeppninni. ",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORK2FT02(BU)",
     "name": "Forritunarkeppni II ",
     "link": "https://namskra.is/courses/5919abc962933a4e9205448e",
     "comment": "",
-    "parents": ["FORK2FE02(AU)"],
+    "parents": ["FORR1FG05(AU)", "FORK2FE02(AU)"],
     "description": "Valáfangi í forritun þar sem nemendur undirbúa sig fyrir Forritunarkeppni framhaldsskólanna og lýkur áfanganum með þátttöku í forritunarkeppninni. ",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORK2FÞ02(CU)",
@@ -33,6 +37,7 @@
     "parents": ["FORK2FT02(BU)"],
     "description": "Valáfangi í forritun þar sem nemendur undirbúa sig fyrir Forritunarkeppni framhaldsskólanna og lýkur áfanganum með þátttöku í forritunarkeppninni. ",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR2FA05(BU)",
@@ -42,6 +47,7 @@
     "parents": ["FORR1FG05(AU)"],
     "description": "Í áfanganum er unnið með gagnategundir, aðferðir (e. methods), fylki, lista og skrár. Nemendur kynnast klasasöfnum og ýmsum atriðum við hönnun forrita sem eru nátengd hlutbundinni forritun. Fjölmörg verkefni eru unnin á önninni sem gefa nemendum innsýn í hlutbundna forritun.",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "VEFÞ1VG05(AU)",
@@ -51,6 +57,7 @@
     "parents": [],
     "description": "Í áfanganum er farið í grunnatriði vefsíðuhönnunar og megináhersla lögð á ívafsmál (e. HTML) og stílsíður (e. CSS). Hver þessara þátta er tekinn sérstaklega fyrir og sýnt hvernig samspil þeirra stuðlar að vandaðri uppsetningu og framsetningu vefsíðna. Skoðuð er þróunarsaga vefsins, hlutverk vafrans (e. Internet browser) og virkni hans.",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "VEFÞ2VH05(BU)",
@@ -60,6 +67,7 @@
     "parents": ["VEFÞ1VG05(AU)"],
     "description": "Í áfanganum vinna nemendur að sveigjanlegri vefsíðuhönnun (e. Responsive Web Design) og skoða mismunandi aðferðir við uppsetningu (e. layout) snjallvefsíðna. Farið er í stílsetningu viðmiðunarmarka (e. breakpoints) í stílsíðu. Farið er í uppsetningu á samskiptaformi og töflu.  Nemendur vinna með kvikun (e. animation) til að lífga upp á vefsíður og til að ná fram gagnvirkni í samskiptum vafra við notendur.   ",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR2HF05(CU)",
@@ -69,6 +77,7 @@
     "parents": ["FORR2FA05(BU)"],
     "description": "Í áfanganum er lögð áhersla á að nemendur geti þróað hugbúnað samkvæmt hlutbundinni aðferðafræði og geti valið þær leiðir sem best eiga við hverju sinni. Klasahugtakið er fyrirferðamikið í þessum áfanga og læra nemendur að hanna og útfæra klasa og nota klasasöfn. Áfram verður unnið með aðferðir, lista, fylki, strengjavinnslu og skráarvinnslu. Nemendur vinna mismunandi verkefni sem reyna á færni þeirra og getu varðandi þessi atriði. ",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "GAGN1NG05(AU)",
@@ -78,6 +87,7 @@
     "parents": [],
     "description": "Í áfanganum kynnast nemendur og vinna með gagnasöfn og skoða hlutverk þeirra í upplýsingasamfélagi. Áhersla er lögð á gögnin sjálf og mismunandi geymsluform og nálgun þeirra. Nemendur kynnast grunnþáttum fyrirspurnarmálsins SQL og læra beitingu þess við almenna gagnavinnslu.  ",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST1TR05(AU)",
@@ -87,6 +97,7 @@
     "parents": [],
     "description": "Nemendur læra um mismunandi talnakerfi, lógískar aðgerðir og grunnatriði í Linux stýrikerfinu.",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST2VJ05(BU)",
@@ -96,6 +107,7 @@
     "parents": ["KEST1TR05(AU)"],
     "description": "Í áfanganum er megináhersla á vélbúnað og stýrikerfi. Nemendur setja saman tölvu, setja upp stýrikerfi, uppfæra BIOS, rekla og stýrikerfi. Farið er í hlutverk og samskipti mismunandi íhluta tölvunnar, s.s. örgjörva og minni, samskipti við viðskiptavini og þjónustuborð og förgun á tölvubúnaði. Fjallað er um tengingu og uppsetningu á jaðartækjum. Tengdar eru saman tvær eða fleiri tölvur þannig að þær geti haft samskipti sín á milli. Farið er í grunnatriði í rafmagnsfræði og hönnun á stýrirás. Nemendur hanna prótótýpu á brauðbretti og lóða rás á veroborð.",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST2UN05(CU)",
@@ -105,6 +117,7 @@
     "parents": ["KEST2VJ05(BU)"],
     "description": "Í áfanganum er farið í undirstöðuatriði netkerfa. Farið er yfir hvernig netbúnaður hefur samskipti, vistföng og algengar netþjónustur. Einnig er farið í uppbyggingu heimanets og undirstöðuatriði í öryggisstillingum. Einnig er farið í prófanir og bilanagreiningu á netkerfisbúnaði.",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR4CF05(EU)",
@@ -114,6 +127,7 @@
     "parents": ["FORR2HF05(CU)"],
     "description": "Áfanginn er framhald FORR3CG05DU og hér er áhersla á föll/aðferðir og hlutbundna forritun. Unnið er með utanaðkomandi gögn svo sem textaskrár og gagnagrunna. Forritun með frávikum (e. exceptions) búin til og notuð. Einnig er unnið með marga klasa í sama verkefni.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR3RR05(DU)",
@@ -123,6 +137,7 @@
     "parents": ["FORR2HF05(CU)", "STÆR3FM05(DT)"],
     "description": "Í áfanganum er farið í tvö mikilvæg atriði tölvunarfræðinnar, gagnaskipan og reiknirit. Farið er yfir þekkt reiknirit (e. algorithms) í tölvunarfræði sem og almenna gagnaskipan. Nemendur kynnast ýmsum gerðum reiknirita, uppbyggingu þeirra og smíði. Nemendur fá einnig innsýn í hlutverk gagnaskipunar í hugbúnaði og hvernig mismunandi skipan er leidd af mismunandi hugmyndum. Nemendur fá einnig tækifæri til að hanna og smíða fjölda forrita sem styrkja þekkingu þeirra á námsefninu.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR2GL05(DU)",
@@ -132,6 +147,7 @@
     "parents": ["FORR2HF05(CU)"],
     "description": "Áfanginn er hugsaður sem almennur inngangur að leikjagerð. Í honum kynnast nemendur þeim grunnatriðum sem flestir tölvuleikir byggjast á. Kynnt eru hin ýmsu söfn (e. libraries) sem notuð eru við smíði tölvuleikja. Farið er yfir hljóð og mynd og hlutverk þeirra í upplifun notandans. Einnig er skoðað hvernig söguþráður og markmið leiksins stýra því hvernig hann er þróaður. Aðaláherslan er þó á forritun leikja og þau sértæku verkefni sem blasa við forritaranum. Ýmis ólík verkefni eru unnin með það að markmiði að gefa nemendum innsýn í heim tölvuleikjagerðar.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR3FL05(EU)",
@@ -141,6 +157,7 @@
     "parents": ["FORR2GL05(DU)", "EÐLI2GR05(BT)", "STÆR3RV05(CT)"],
     "description": "Í áfangnum er farið dýpra í grafík og hljóð í tölvuleikjum og sérstök áhersla er sett á rúllandi bakgrunn (e. scrolling background) og þýðingu hans fyrir tölvuleiki almennt. Kynnt verður hvernig hagnýta má ýmis eðlisfræðilögmál í leikjagerð. Byrjunaratriði í gerfigreind verða líka til umfjöllunar. Einnig er skoðuð sú grein leikja sem kallast platformers. Í lokin er farið yfir sértæk verkefni í fjölspilunarleikjum. Öll umgjörð leiks færist nú frá stigi frumgerða yfir í fullvaxta tölvuleik.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR3JS05(DU)",
@@ -150,6 +167,7 @@
     "parents": ["FORR2HF05(CU)", "VEFÞ2VH05(BU)"],
     "description": "Í áfanganum er farið vel í forritunarmálið JavaScript. Unnið er með DOM (e. Document Object Model) í veflausnum. Söfn eru skoðuð og notuð til að einfalda verk og við þróun lausna. Saga og þróun JavaScripts er skoðuð með hljóðsjón til vefþróunar. Nemendur vinna að þróun gagnvirkra viðmótsforrita með notkun JavaScript.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR3FV05(EU)",
@@ -159,6 +177,7 @@
     "parents": ["FORR3JS05(DU)", "STÆR3RV05(CT)"],
     "description": "Í áfanganum fást nemendur við eftirfarandi viðfangsefni: notendaupplifun (e. UX), notendaviðmót (e. UI) og viðmótsforritun fyrir mismunandi aðstæður og umhverfi. Söfn, tæki og tól eru skoðuð og notuð við þróun afurðar. Nemendur vinna að smíði gagnvirkrar afurðar.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "VEFÞ2VÞ05(DU)",
@@ -168,6 +187,7 @@
     "parents": ["VEFÞ2VF05(CU)", "FORR2HF05(CU)", "GAGN1NG05(AU)"],
     "description": "Í áfanganum læra nemendur uppsetningu gagnvirks vefjar á vefþjón. Farið er í varðveislu gagna, notkun gagnasniðs (e. data format) og þáttun (e. parsing) þeirra í vef. Nemendur vinna að gerð vefja með gagnagrunni.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "VEFÞ3VL05(EU)",
@@ -177,6 +197,7 @@
     "parents": ["VEFÞ2VÞ05(DU)", "FORR3JS05(DU)"],
     "description": "Í áfanganum fást nemendur við hinar ýmsu hliðar í vefþróun. Unnið er með tækni og hugmyndir sem nemendur byggja inn í sínar veflausnir. Kynntar eru vefþjónustur (e. API) og hvernig þær eru notaðar með veflausnum. Notast er við hlutbundna aðferðafræði og MVC mynstur í vefforritun ásamt notkun beininga (e. routing). Söfn og ýmis forritunarmál eru skoðuð og notuð til að einfalda verk og við þróun veflausna.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "ROBO2RG05(AU)",
@@ -186,6 +207,7 @@
     "parents": ["FORR2FA05(BU)", "KEST2VJ05(BU)", "EÐLI2GR05(BT)"],
     "description": "Í áfanganum kynnast nemendur vélmennum, hvað er vélmenni og hvaða tækni er notuð í vélmennum. Nemendur kynnast  lausnaraðferðum, verkefnastjórnun, samvinnu og að nýta sér þá þekkingu í stærðfræði, eðlisfræði og forritun sem þeir hafa þegar vald á.  Eftirfarandi námsþættir verða kenndir: niðurbrot vandamála úr flókinni  hegðun í einafalda hegðun (e. behavior), gerð flæðirita og sauðakóða og að lokum forritun sem vélmenni skilur, hreyfing (fram, aftur, snúningur) tími  og staða, fjarstýringar (bylgjufræði) og nemar.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "ROBO3RF05(BU)",
@@ -195,6 +217,7 @@
     "parents": ["ROBO2RG05(AU)"],
     "description": "Í áfanganum leysa nemendur stórt verkefni sem er fyrirframskilgreint. Nemendur gera verkáætlun þar sem verkefnið er brotið niður í minnstu einingar.  Logskrár, verkáætlun, auðlindir þ.e vélbúnaður og hugbúnaður sem til þarf, flæðirit, sauðakóði og innleiðing.  Öllu er steypt saman í lokaskýrslu.  ",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "VEFÞ2VF05(CU)",
@@ -204,6 +227,7 @@
     "parents": ["FORR2FA05(BU)", "VEFÞ1VG05(AU)"],
     "description": "Í áfanganum eru grunnatriði vefforritunar kynnt. Farið er í miðlara/biðlara uppbyggingu vefsíðna, samskipti þeirra og hlutverk hvers hluta. Nemendur vinna að smíði vefja með miðlaramáli. Lögð er áhersla á málfræði og endurnýtni á kóða í gerð vefja.",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "GAGN2HS05(BU)",
@@ -213,6 +237,7 @@
     "parents": ["GAGN1NG05(AU)", "FORR2FA05(BU)"],
     "description": "Í áfanganum kynnast nemendur helstu hugtökum gagnasafnsfræðinnar. Áhersla er lögð á vensluð gagnasöfn og nýtingu þeirra í gegnum fyrirspurnarmálið SQL. Nemendur læra undirstöðuatriði í hönnungangagrunna og smíði þeirra. Farið er sérstaklega í greiningu og flokkun  gagna í töflur og hvernig gögn venslast saman samkvæmt regluverki gagnasafnsfræðinnar. Nemendur kynnast grunnþáttum fyrirspurnarmálsins SQL og læra beitingu þess við smíðar, uppfærslu og vinnu með vensluð gögn í gagnagrunnum. Einnig eru kynntar vistaðar stefjur (e. stored procedures) og föll. Er notkun þeirra kynnt og æfð.  Í áfanganum er þekkingaröflun studd fjölda verkefna og rædd eru ýmis álitamál sem upp koma við hönnun.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "GAGN2VG05(CU)",
@@ -222,6 +247,7 @@
     "parents": ["GAGN2HS05(BU)"],
     "description": "Í áfanganum er áfram unnið að aukinni þekkingu á grunnatriðum gagnagrunnshönnunar. Farið er sérstaklega í normalform og forsendur fyrir mikilvægi þeirra. Skilningur nemenda er dýpkaður á JOIN og SUBQUERY fyrirspurnum og mikilvægi þeirra tíundað í því ferli að breyta gögnum í upplýsingar. Höfuðáhersla er á notkun viðauka við SQL staðalinn, svokallaða stefjuforritun. Farið er vel í vistaðar stefjur og föll og hagnýting þeirra í gagnagrunnsvinnslu tíundaðar. Kynntar eru ýmsar leiðir til gagnavinnslu með slíkum stefjum en einnig með svonefndum sýnum (e. view).  Nemendur fá innsýn í útfærslu flóknari reglna í gagnasöfnum með rofum (e. trigger). Tenging gagnagrunna við forrit og/eða vef er kynnt og skoðaðar hefðbundnar leiðir í gagnagrunnsháðum hugbúnaði.  ",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "GAGN3GS05(DU)",
@@ -231,6 +257,7 @@
     "parents": ["GAGN2VG05(CU)"],
     "description": "Í áfanganum kynnast nemendur gagnalíkönum og gagnavinnslu sem ekki endilega er byggð á venslaða líkaninu. Skoðuð eru gagnasöfn (e. data sets) sem finnast á veraldarvefnum og unnið með upplýsingar þaðan. Athygli er beint að mismunandi gagnalíkönum sem notuð eru í hinum ýmsu gagnasettum og hvaða tækni er notuð til að vinna með þau. Skoðað er sérstaklega hvernig finna má upplýsingar í gögnum og hagnýta t.d. við ákvarðanatöku. Notaður er m.a. sérhæfður gagnavinnsluhugbúnaður til að vinna með hinar ýmsu tegundir af gögnum. Heildarinntak þessa áfanga er stutt kynning á gagnavísindum.  Nemendur vinna sjálfstætt að fjölbreyttum verkefnum.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST2LG05(DU)",
@@ -240,6 +267,7 @@
     "parents": ["KEST2UN05(CU)"],
     "description": "Í áfanganum er farið í helstu skipanir í Linux umhverfinu og nemendur kynnast muninum á því að vera notandi og stjórnandi í Linux umhverfi í gegnum terminal vinnu. Farið er í þætti eins og skeljar, skráarvinnslu, skráarvernd, afritun, pípur, síur, ræsingu, lokun, diskastýringar og pakkakerfi. Stuðst er við kennsluefni frá NDG sem undirbýr nemendur undir alþjóðlegt próf LPIC-1.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST3LN05(EU)",
@@ -249,6 +277,7 @@
     "parents": ["KEST2LG05(DU)"],
     "description": "Í áfanganum er farið í ýmsa sértæka þætti við umsjón og stjórnun Linux í netumhverfinu með root aðgangi. Meðal þeirra þátta eru t.d. póstþjónn (E-mail), nafnaþjónn (DNS), vefþjónn (Apache), skráarþjónn (NFS), prentþjónn (CUPS), gagnaþjónn (my-SQL), dulritun (SSH/GPG) og eldveggur (iptables). Stuðst er við kennsluefni frá NDG sem undirbýr nemendur undir alþjóðlegt próf LPIC-1.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST3LS05(FU)",
@@ -258,6 +287,7 @@
     "parents": ["KEST3LN05(EU)", "FORR2FA05(BU)"],
     "description": "Í áfanganum er farið dýpra í skeljarumhverfin bash og ksh. Ýmsar skriftur eru skoðaðar og nemendur búa til sínar eigin skriftur til að létta og auðvelda alla endurtekna vinnslu við hinar ýmsu þjónustur sem keyrðar eru á Linux. Stuðst er við kennsluefni LPI 3 frá IBM auk ýmiss annars efnis af netinu.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST2WG05(DU)",
@@ -267,6 +297,7 @@
     "parents": ["KEST2UN05(CU)", "FORR2FA05(BU)"],
     "description": "Í áfangum læra nemendur uppsetningu og rekstur Windows Server sem kerfisstjórnun. Megináhersla er lögð á Active Directory, DNS og DHCP þjónustur. Nemendur kynnast uppbyggingu Windows Server, aðgangsstjórnun notenda og hópa og reglustýringu (e. group policy). Kynnt er afritun og endurheimting gagna sem og diskstýringar (RAID).",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST3WN05(EU)",
@@ -276,6 +307,7 @@
     "parents": ["KEST2WG05(DU)"],
     "description": "Í áfanganum er farið dýpra í reglustýringar, DHCP (e. Dynamic Host Configuration Protocol) og DNS (e. Domain Name System). Nemendur læra að skrifa PowerShell skriftur til að setja upp Active Directory (AD), DHCP og DNS auk þess sem þeir læra að gera skriftur til að búa til notendur. Farið er í uppbyggingu Active Directory Schema og hvernig gera má breytingar á því. Nemendur vinna svo með Microsoft Internet Information Server (IIS) og Microsoft SQL Server eða skyldum þjónustum. Þá er fjallað um Virtual Private Networking (VPN) og öryggis- og eftirlitsmál.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST3WS05(FU)",
@@ -285,6 +317,7 @@
     "parents": ["KEST3WN05(EU)"],
     "description": "Í áfanganum læra nemendur um flóknari uppsetningar á Active Directory (AD) og tengdum þjónustum með skriftum auk þess að búa til möppur, setja réttindi á þær og deila með PowerShell. Nemendur skrifa myndræn notendaskil (GUI) með PowerShell. Þá læra nemendur hvernig sækja má upplýsingar frá útstöðvum með PowerShell og Windows Management Instrumentation (WMI). Nemendum læra svo um Desire State Configuration (DSC) og vinna með Windows Server án GUI.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST3CR05(EU)",
@@ -294,6 +327,7 @@
     "parents": ["KEST2UN05(CU)"],
     "description": "Í áfanganum er megináhersla á samskipti milli beina og skipta í litlu netkerfi. Farið er í innviði og virkni á netkerfisbúnaði, m.a. VLAN, static og dynamic routing, ACL, DHCP og NAT. Stuðst er við verklegar æfingar og tölvuhermi til að auka færni nemenda í að stilla og bilanagreina beina og skipta.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST3CS05(FU)",
@@ -303,6 +337,7 @@
     "parents": ["KEST3CR05(EU)"],
     "description": "Í áfanganum er megináhersla á stærri netkerfi. Farið er í flóknar stillingar á netkerfisbúnaði. Nemendur læra að stilla og bilanagreina switcha og routera, þeir læra að leysa algeng vandamál sem tengjast OSPF, EIGRP, STP og VLAN. Nemendur fá einnig þjálfun í að setja upp meðalstórt þráðlaust netkerfi. Nemendur nota tölvuhermi og verklegar æfingar til að ná færni og skilningi á netkerfum.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "KEST3CN05(GU)",
@@ -312,6 +347,7 @@
     "parents": ["KEST3CS05(FU)"],
     "description": "Í áfanganum er megináhersla á WAN tengingar. Farið er í WAN samskiptastaðla, m.a. PPP, HDLC og breiðband, stillingar á VPN og eftirlit með netkerfum. Einnig er farið í hönnun netkerfa. Nemendur nota tölvuhermi og verklegar æfingar til að ná færni og skilningi á WAN samskiptum og hönnun netkerfa, einnig er vandamálagreining þjálfuð í þessum búnaði. ",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "FORR3NÞ05(DU)",
@@ -321,6 +357,7 @@
     "parents": ["FORR2HF05(CU)", "KEST2UN05(CU)"],
     "description": "Áfanginn er verkefnadrifinn. Smíðaður er fjölþráða netleikur og sú tækni og þekking sem til þarf er kynnt, skoðuð og æfð samhliða framvindu verkefnisins. Ætlast er til að nemendur sýni frumkvæði og sjálfstæði í vinnubrögðum.",
     "core": false,
+    "active": true,
     "tbr": true
 }, {
     "id": "EÐLI2GR05(BT)",
@@ -330,6 +367,7 @@
     "parents": [],
     "description": "Áfanginn er grunnáfangi í klassískri eðlisfræði. Lögð er áhersla á úrlausnarefni sem tengjast öðru námi nemenda við skólann. Helstu viðfangsefni eru: Hreyfing í einni vídd, fallhreyfing, kraftlögmál Newtons, áhrif núningskrafta, samband vinnu og ýmissa orkuforma, orka og varðveisla hennar, skriðþungavarðveisla, þrýstingur, uppdrif og inngangur að varmafræði.",
     "core": false,
+    "active": true,
     "tbr": false
 }, {
     "id": "STÆR3RV05(CT)",
@@ -339,8 +377,9 @@
     "parents": [],
     "description": "Í áfanganum er fjallað um vigra og hornaföll. Helstu efnisatriði: Vigrar og reikningur með þeim - Hornaföll - Hornafallareglur og sannanir þeirra - Jöfnur línu, hrings og sporbaugs - 2X2 fylki og notkun þeirra til að finna flatarmál þríhyrnings og leysa jöfnuhneppi",
     "core": false,
+    "active": true,
     "tbr": false
-},  {
+}, {
     "id": "VAL05",
     "name": "Valáfangi á 3. önn",
     "link": "",
@@ -348,6 +387,7 @@
     "parents": ["GAGN2HS05(BU)", "ROBO2RG05(AU)", "KEST2LG05(DU)", "KEST2WG05(DU)"],
     "description": "Nemendur sem eru að fara á 3. önn skulu velja einn af neðantöldum áföngum í aðalval og tvo í varaval.",
     "core": true,
+    "active": true,
     "tbr": true
 }, {
     "id": "STÆR3FM05(DT)",
@@ -357,5 +397,6 @@
     "parents": [],
     "description": "Í áfanganum er fjallað um föll og diffrun þeirra. Helstu efnisatriði: - Föll og ferlar falla - Hliðrun falla, takmörkuð föll, einhalla föll , andhverfur falla, ýmsar tegundir falla - Markgildi og samfeldni - Snertill, diffurkvóti, afleiða - Ýmsar diffurreglur",
     "core": false,
+    "active": true,
     "tbr": false
 }]

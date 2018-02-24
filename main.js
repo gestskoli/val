@@ -6,7 +6,11 @@ const mainDiv = document.getElementById('maingrid');
     fetch("afangar.json")
         .then(res => res.json())
         .then(json => {
-            json.map(j => afangar.push(new Afangi(j)));
+            json.map(j => {
+                if(j.active) {
+                    afangar.push(new Afangi(j))
+                }    
+            });
             afangar.map(afangi => {
                 const undanfarar = afangi.parents
                 if (undanfarar) {
