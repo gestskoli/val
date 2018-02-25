@@ -283,7 +283,7 @@
     "id": "KEST3LS05(FU)",
     "name": "Linux - skriftur",
     "link": "https://namskra.is/courses/591c2be962933a4e920558d7",
-    "comment": "",
+    "comment": "Má taka samhliða KEST3LN05(EU)",
     "parents": ["KEST3LN05(EU)", "FORR2FA05(BU)"],
     "description": "Í áfanganum er farið dýpra í skeljarumhverfin bash og ksh. Ýmsar skriftur eru skoðaðar og nemendur búa til sínar eigin skriftur til að létta og auðvelda alla endurtekna vinnslu við hinar ýmsu þjónustur sem keyrðar eru á Linux. Stuðst er við kennsluefni LPI 3 frá IBM auk ýmiss annars efnis af netinu.",
     "core": false,
