@@ -6,20 +6,22 @@
     --ROBO: rgba(250, 177, 160, 0.7);
     --VEFÞ: rgba(129, 236, 236, 0.7);
     --CORE: rgba(214, 48, 49, 0.7);
-    --VAL: rgba(240, 240, 240, 0.7);
+    --VAL: rgba(240, 240, 240, 0.7);  
     --EÐLI: rgba(255, 118, 117, 0.7);
     --STÆR: var(--EÐLI);
-    --ONN1: rgba(108, 92, 231, 0.7);
-    --ONN2: rgba(9, 132, 227, 0.7);
-    --ONN3: rgba(0, 184, 148, 0.7);
+    --ONN1: rgba(108, 92, 231, 0.15);
+    --ONN2: rgba(9, 132, 227, 0.15);
+    --ONN3: rgba(0, 184, 148, 0.15);
     --STRONG: rgba(214, 48, 49, 1.0);
     --LINK: rgba(9, 132, 227, 1.0);
+    --SAMH: rgba(0, 184, 148,1.0);
+    --BAKG: rgba(223, 230, 233,1.0)
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
-    background: rgba(223, 230, 233, 1.0);
+    background: var(--BAKG);
     vertical-align: middle;
     color: rgba(45, 52, 54, 1.0)
 }
@@ -32,9 +34,10 @@ header {
 div.container {
     display: grid;
     width: 100%;
-    grid-template-columns: auto;
+    
+    grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
-    grid-gap: 0.5rem;
+    grid-gap: 5px;
     grid-template-areas: 
         "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG" 
         "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH" 
@@ -100,12 +103,26 @@ strong {
     color: var(--STRONG);
 }
 
-div.undanfarar {
-    padding: 0 0;
-    margin: 0;
-    margin-bottom: 4px;
-    text-align: left;
+strong.comment {
+    padding: 3px 3px;
+    margin: 4px;
+    text-align: center;
+    color: var(--BAKG);
+    background: var(--SAMH);
+    border: 2px solid var(--SAMH);
+    border-radius: 5px;
     display: block;
+    box-shadow: black;
+}
+
+div.undanfarar {
+    padding: 3px 3px;
+    margin: 4px;
+    margin-bottom: 4px;
+    text-align: center;
+    display: block;
+    border: 2px solid var(--STRONG);
+    border-radius: 5px;
 }
 
 h4 {
@@ -117,11 +134,12 @@ h4 {
 }
 
 div.annir {
-    padding: 5px 5px;
+    padding: 50px 10px;
     margin: 5px;
     border-radius: 10px;
-    text-align: center;
     font-size: 1.5rem;
+
+    width: 900%;
 }
 
 div.onn1 {
