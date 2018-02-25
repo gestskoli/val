@@ -79,3 +79,27 @@ function teiknaUndanfara() {
         });
     });
 }
+
+/* const annir = document.getElementsByClassName("annir");
+console.log(annir);
+for(var a of annir) {
+    divBr = a.getBoundingClientRect().width;
+    browserBr = window.innerWidth;
+    console.log("fyrir",a.getBoundingClientRect())
+    //a.style.width = "100%";
+    console.log("eftir",window.innerWidth)
+    console.log(`hlutfall = ${divBr/browserBr}`)
+    console.log(`breydd deilt með 9 = ${browserBr/9}`)
+    //a.style.width = "750%";
+    a.style.width = `${100/(divBr/browserBr)}%`;
+}
+
+window.addEventListener("resize", () => {
+    
+    for(var a of annir) {
+        divBr = a.getBoundingClientRect().width;
+        browserBr = window.innerWidth;
+        a.style.width = `${100/(divBr/browserBr)}%`;
+        console.log(`${100/(divBr/browserBr)}% - ${divBr/browserBr}`);
+    }
+}) */
