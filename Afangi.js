@@ -14,12 +14,12 @@ class Afangi {
 
     get div() {
         const comment = this.comment ? `<strong class='comment'>${this.comment}</strong>` : "";
-        let undanfarar = `<div class='undnafarar'><strong>Undanfarar:</strong> </div>`;
+        let undanfarar = `<div class='undnafarar'><strong class="undanfaracomment">Undanfarar:</strong> </div>`;
 
         if (this.parents.length > 0) {
 
             if (this.parents.length === 1) {
-                undanfarar = `<div class='undnafarar'><strong>Undanfari:</strong> </div>`;
+                undanfarar = `<div class='undnafarar'><strong class="undanfaracomment">Undanfari:</strong> </div>`;
             }
             if (this.id === "VAL05") {
                 undanfarar = ""; 
@@ -30,7 +30,7 @@ class Afangi {
             undanfarar = "";
         }
 
-        let div = `<h4>${this.name}<br><a target="_blank" href="${this.link}">${this.id}</a></h4>${undanfarar}<br>${comment}`;
+        let div = `<h4>${this.name}<br><a target="_blank" href="${this.link}">${this.id}</a></h4>${undanfarar}${comment}`;
         if (this.id === "VAL05") {
             div = `<h4>${this.name}</h4>${undanfarar}`;
         }

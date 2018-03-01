@@ -28,8 +28,22 @@ body {
 }
 
 header {
+    display: block;
+
+}
+
+.haus {
+    position: relative;
+
     font-size: 2rem;
-    text-align: center;
+    float: left;
+    /* text-align: right; */
+}
+
+.takki-btn {
+    border-radius: 5px;
+    font-size: 1.5rem;
+    float: right;
 }
 
 div.container {
@@ -101,6 +115,7 @@ a:active {
 }
 
 strong {
+    display: none;
     color: var(--STRONG);
 }
 
@@ -112,8 +127,7 @@ strong.comment {
     background: var(--SAMH);
     border: 2px solid var(--SAMH);
     border-radius: 5px;
-    display: block;
-    box-shadow: black;
+    display: none;
 }
 
 div.undanfarar {
@@ -121,7 +135,7 @@ div.undanfarar {
     margin: 4px;
     margin-bottom: 4px;
     text-align: center;
-    display: block;
+    display: none;
     border: 2px solid var(--STRONG);
     border-radius: 5px;
 }
