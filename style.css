@@ -9,13 +9,14 @@
     --VAL: rgba(240, 240, 240, 0.7);  
     --EÐLI: rgba(255, 118, 117, 0.7);
     --STÆR: var(--EÐLI);
-    --ONN1: rgba(108, 92, 231, 0.15);
-    --ONN2: rgba(9, 132, 227, 0.15);
-    --ONN3: rgba(0, 184, 148, 0.15);
+    --ONN1: rgba(108, 92, 231, 0.10);
+    --ONN2: rgba(9, 132, 227, 0.10);
+    --ONN3: rgba(0, 184, 148, 0.10);
     --STRONG: rgba(214, 48, 49, 1.0);
     --LINK: rgba(9, 132, 227, 1.0);
     --SAMH: rgba(0, 184, 148,1.0);
-    --BAKG: rgba(223, 230, 233,1.0)
+    --BAKG: rgba(223, 230, 233,1.0);
+    --ANNIR: var(--ONN2);
 }
 
 body {
@@ -135,26 +136,25 @@ h4 {
 
 div.annir {
     padding: 50px 10px;
-    margin: 5px;
     border-radius: 10px;
     font-size: 1.5rem;
-
-    width: 900%;
+    background: var(--ANNIR);
+    width: 910%;
 }
 
 div.onn1 {
     grid-area: onn1;
-    background: var(--ONN1);
+    /* background: var(--ANNIR); */
 }
 
 div.onn2 {
     grid-area: onn2;
-    background: var(--ONN2);
+    /* background: var(--ONN2); */
 }
 
 div.onn3 {
     grid-area: onn3;
-    background: var(--ONN3);
+    /* background: var(--ONN3); */
 }
 
 div.VAL0 {
