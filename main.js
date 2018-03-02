@@ -12,10 +12,8 @@ const mainDiv = document.getElementById('maingrid');
 
             afangar.forEach(afangi => {
                 afangi.parents = afangi.parents.map(p => afangar.find(a => a.id === p));
-                // finnaUndanfara(afangi);
                 synaDiv(afangi);
             });
-            //teiknaUndanfara();
             teiknaParUndanfara();
         })
         .catch(e => console.log("villa:", e));
@@ -98,7 +96,7 @@ function teiknaParUndanfara() {
 const chkUndanfara = document.getElementById('chkUndanfara');
 chkUndanfara.addEventListener("click", e => {
     if(e.target.id === 'chkUndanfara') {
-
+        e.target.value = e.target.value === "Sýna meira..." ? e.target.value = "Sýna minna..." : e.target.value = "Sýna meira...";
         undanf = Array.from(document.querySelectorAll('.undanfarar,strong'));
         undanf.forEach(u => u.style.display === 'none' || u.style.display.length === 0 ? u.style.display = 'block' : u.style.display = 'none');
 
