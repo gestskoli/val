@@ -1,7 +1,6 @@
 const afangar = [];
-
+const allirAfangar = [];
 const mainDiv = document.getElementById('maingrid');
-//const allirUndanfarar = [];
 
 (function saekjaJson() {
     fetch("afangar.json")
@@ -29,11 +28,12 @@ function synaDiv(afangi) {
     div.id = afangi.id;
     div.innerHTML = afangi.div;
     mainDiv.appendChild(div);
+    allirAfangar.push(div);
 }
 
 function teiknaParUndanfara() {
-    const currentLines = Array.from(document.getElementsByClassName('leader-line'));
-    currentLines.forEach(l => l.remove());
+    Array.from(document.getElementsByClassName('leader-line'))
+         .forEach(l => l.remove());
     afangar.forEach(afangi => {
         const curDiv = document.getElementById(afangi.id);
         const undanfaraLinur = [];
@@ -50,14 +50,12 @@ function teiknaParUndanfara() {
                         hide: true,
                         color: "rgba(45, 52, 54,1.0)",
                         size: 4,
-                        endPlug: "none",
                         startPlug: "behind",
                         dash: {animation: true}
                     }
                 );
 
                 if (afangi.id === 'VAL05') {
-                    undanfaraLina.endPlug = "arrow1"
                     undanfaraLina.setOptions({
                         startSocket: 'top',
                         color: "green",
@@ -71,22 +69,22 @@ function teiknaParUndanfara() {
             });
         }
 
-        const allirAfangar = Array.from(mainDiv.getElementsByClassName('afangar'));
+        // const allirAfangar = Array.from(mainDiv.getElementsByClassName('afangar'));
 
         curDiv.addEventListener("mouseover", e => {
-            if(afangar.find(a => a.id === e.target.id)) {
+            //if(afangar.find(a => a.id === e.target.id)) {
                 curDiv.title = afangi.description;
                 // curDiv.dataTooltip = afangi.description;
                 undanfaraLinur.forEach(l => l.show("draw"));
-            }
+            //}
             
             allirAfangar.forEach(a => undanfaraAfangar.has(a) ? a.style.opacity = 1 : a.style.opacity = 0.3);
         });
 
         curDiv.addEventListener("mouseleave", e => {
-            if(afangar.find(a => a.id === e.target.id)) {
+            //if(afangar.find(a => a.id === e.target.id)) {
                 undanfaraLinur.forEach(l => l.hide());
-            }
+            //}
             allirAfangar.forEach(a => a.style.opacity = 1.0)
         });
     });
@@ -97,8 +95,10 @@ const chkUndanfara = document.getElementById('chkUndanfara');
 chkUndanfara.addEventListener("click", e => {
     if(e.target.id === 'chkUndanfara') {
         e.target.value = e.target.value === "Sýna meira..." ? e.target.value = "Sýna minna..." : e.target.value = "Sýna meira...";
-        undanf = Array.from(document.querySelectorAll('.undanfarar,strong'));
-        undanf.forEach(u => u.style.display === 'none' || u.style.display.length === 0 ? u.style.display = 'block' : u.style.display = 'none');
+        Array.from(document.querySelectorAll('.undanfarar,strong'))
+             .forEach(u => u.style.display === 'none' || u.style.display.length === 0 
+                         ? u.style.display = 'block' 
+                         : u.style.display = 'none');
 
         teiknaParUndanfara();
     }
