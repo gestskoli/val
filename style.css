@@ -34,10 +34,8 @@ header {
 
 .haus {
     position: relative;
-
     font-size: 2rem;
     float: left;
-    /* text-align: right; */
 }
 
 .takki-btn {
