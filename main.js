@@ -71,7 +71,7 @@ function teiknaParUndanfara() {
             });
         }
 
-        const allirAfangar = Array.from(mainDiv.children);
+        const allirAfangar = Array.from(mainDiv.getElementsByClassName('afangar'));
 
         curDiv.addEventListener("mouseover", e => {
             if(afangar.find(a => a.id === e.target.id)) {
