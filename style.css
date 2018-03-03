@@ -1,3 +1,4 @@
+@charset "UTF-8";
 :root {
     --FORR: rgba(255, 234, 167, 0.7);
     --FORK: rgba(253, 121, 168, 0.7);
@@ -115,6 +116,10 @@ a:active {
 strong {
     display: none;
     color: var(--STRONG);
+}
+
+.fela {
+    display: none;
 }
 
 strong.comment {

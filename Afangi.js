@@ -13,18 +13,18 @@ class Afangi {
     }
 
     get div() {
-        const comment = this.comment ? `<strong class='comment'>${this.comment}</strong>` : "";
-        let undanfarar = `<div class='undnafarar'><strong class="undanfaracomment">Undanfarar:</strong> </div>`;
+        const comment = this.comment ? `<strong class='comment fela'>${this.comment}</strong>` : "";
+        let undanfarar = `<div class='undnafarar fela'><strong class="undanfaracomment fela">Undanfarar:</strong> </div>`;
 
         if (this.parents.length > 0) {
 
             if (this.parents.length === 1) {
-                undanfarar = `<div class='undnafarar'><strong class="undanfaracomment">Undanfari:</strong> </div>`;
+                undanfarar = `<div class='undnafarar fela'><strong class="undanfaracomment fela">Undanfari:</strong> </div>`;
             }
             if (this.id === "VAL05") {
                 undanfarar = ""; 
             }
-            this.parents.map(p => undanfarar += `<div class="undanfarar ${p.id.split('0')[0].substring(0,4)}"><b>${p.name}</b><br><a target="_blank" href="${p.link}">${p.id}</a></div>`);
+            this.parents.map(p => undanfarar += `<div class="undanfarar fela ${p.id.split('0')[0].substring(0,4)}"><b>${p.name}</b><br><a target="_blank" href="${p.link}">${p.id}</a></div>`);
             undanfarar += `</div></div>`;
         } else {
             undanfarar = "";
