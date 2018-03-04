@@ -31,19 +31,25 @@ body {
 
 header {
     display: block;
+    text-align: center;
 
 }
 
 .haus {
     position: relative;
-    font-size: 2rem;
-    float: left;
+    font-size: 1.5rem;
+    align-content: center;
 }
 
 .takki-btn {
     border-radius: 5px;
     font-size: 1.2rem;
     float: right;
+}
+
+.linkar {
+    display: grid;
+    grid-template-columns: auto;
 }
 
 div.container {

@@ -137,14 +137,18 @@ function synaModal(e) {
 
 function undanFararModal(afangi) {
     const undanfaraDiv = document.getElementsByClassName('mundanfarar')[0];
-    undanfaraDiv.childNodes.forEach(c => c.remove());
-    undanfaraDiv.childNodes.forEach(c => c.remove());
+/*     undanfaraDiv.childNodes.forEach(c => c.remove());
+    undanfaraDiv.childNodes.forEach(c => c.remove()); */
+
+        while(undanfaraDiv.firstChild) {
+            undanfaraDiv.removeChild(undanfaraDiv.firstChild);
+        }
     
     if(afangi.parents.length > 0) {
         if(afangi.parents.length === 1) {
             undanfaraDiv.textContent = "Undanfari:";
         } else {
-            undanfaraDiv.textContent = "Undanfarar:"
+            undanfaraDiv.textContent = "Undanfarar:";
         }
         if(afangi.id === "VAL05") {
             undanfaraDiv.textContent = "";
