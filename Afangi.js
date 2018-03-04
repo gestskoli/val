@@ -30,12 +30,21 @@ class Afangi {
             undanfarar = "";
         }
 
-        let div = `<h4>${this.name}<br><a target="_blank" href="${this.link}">${this.id}</a></h4>${undanfarar}${comment}`;
+        let div = `<div class="afangi" id="${this.id}">${this.name}</div><div class="linkur" id="${this.id}">${this.id}</div>${undanfarar}${comment}`;
         if (this.id === "VAL05") {
-            div = `<h4>${this.name}</h4>${undanfarar}`;
+            div = `<div class="afangi" id="${this.id}">${this.name}</div>${undanfarar}`;
         }
 
         return div;
+    }
+
+    get button() {
+        let button = `<div class="afangi" id="${this.id}">${this.name}</div><div class="linkur" id="${this.id}">${this.id}</div>`;
+        if (this.id === "VAL05") {
+            button = `<div class="afangi" id="${this.id}">${this.name}</div>`;
+        }
+
+        return button;
     }
 
 }

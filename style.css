@@ -17,6 +17,7 @@
     --LINK: rgba(9, 132, 227, 1.0);
     --SAMH: rgba(0, 184, 148,1.0);
     --BAKG: rgba(223, 230, 233,1.0);
+    --TEXT: rgba(45, 52, 54, 1.0);
     --ANNIR: var(--ONN2);
 }
 
@@ -25,7 +26,7 @@ body {
     font-size: 12px;
     background: var(--BAKG);
     vertical-align: middle;
-    color: rgba(45, 52, 54, 1.0)
+    color: var(--TEXT);
 }
 
 header {
@@ -84,13 +85,24 @@ div.container {
         "empty5 empty5 empty5 STÆR3RV05 empty7 EÐLI2GR05 empty6 empty6 empty6" */
 }
 
-div.afangar {
+.afangar {
     display: block;
     border-radius: 10px;
+    border: none;
     padding: 5px 5px;
-    margin: 5px;
-    background-color: rgba(173, 215, 229, 0.7);
+    margin: 7px 7px;
     z-index: 10;
+    cursor: zoom-in;
+}
+
+.afangi {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.linkur {
+    color: var(--LINK);
+    font-size: 0.8rem;
 }
 
 a {
@@ -173,38 +185,36 @@ div.onn2 {
 div.onn3 {
     grid-area: onn3;
     /* background: var(--ONN3); */
-}
-
-div.VAL0 {
+}.VAL0 {
     background: var(--VAL);
 }
 
-div.KEST {
+.KEST {
     background: var(--KEST);
 }
 
-div.FORR {
+.FORR {
     background: var(--FORR);
 }
 
-div.GAGN {
+.GAGN {
     background: var(--GAGN);
 }
 
-div.VEFÞ {
+.VEFÞ {
     background: var(--VEFÞ);
 }
 
-div.ROBO {
+.ROBO {
     background: var(--ROBO);
 }
 
-div.FORK {
+.FORK {
     background: var(--FORK);
 }
 
-div.EÐLI,
-div.STÆR {
+.EÐLI,
+.STÆR {
     background: var(--EÐLI);
 }
 
@@ -212,7 +222,7 @@ div.STÆR {
 
 .modal {
   /* This way it could be display flex or grid or whatever also. */
-  display: block;
+  display: none;
   
   /* Probably need media queries here */
   width: 600px;
@@ -236,7 +246,7 @@ div.STÆR {
   /* margin: -200px 0 0 -200px; */
   
   background: white;
-  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.6);
 }
 .closed {
   display: none;
@@ -253,10 +263,10 @@ div.STÆR {
     text-align: center;
 }
 
-.mlysing, .mundanfarar, .mcomment {
+.mlysing, .mundanfarar, .mcomment, .mlinkur {
     font-size: 1rem;
     text-align: left;
-    margin: 15px;
+    margin: 20px;
 }
 
 .modal-overlay {
@@ -266,8 +276,8 @@ div.STÆR {
   width: 100%;
   height: 100%;
   z-index: 50;
-  
-  background: rgba(0, 0, 0, 0.6);
+  opacity: 1;
+  background: white;
 }
 .modal-guts {
   position: absolute;
@@ -285,27 +295,14 @@ div.STÆR {
   /* don't need to go crazy with z-index here, just sits over .modal-guts */
   z-index: 1;
   
-  top: 10px;
+  bottom: 5%;
   
   /* needs to look OK with or without scrollbar */
   right: 20px;
   
   border: 0;
-  background: black;
-  color: white;
+  background: var(--TEXT);
+  color: var(--BAKG);
   padding: 5px 10px;
   font-size: 1.3rem;
-}
-
-.open-button {
-  border: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: lightgreen;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  font-size: 21px;
 }

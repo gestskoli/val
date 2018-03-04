@@ -366,7 +366,7 @@
     "comment": "",
     "parents": [],
     "description": "Áfanginn er grunnáfangi í klassískri eðlisfræði. Lögð er áhersla á úrlausnarefni sem tengjast öðru námi nemenda við skólann. Helstu viðfangsefni eru: Hreyfing í einni vídd, fallhreyfing, kraftlögmál Newtons, áhrif núningskrafta, samband vinnu og ýmissa orkuforma, orka og varðveisla hennar, skriðþungavarðveisla, þrýstingur, uppdrif og inngangur að varmafræði.",
-    "core": false,
+    "core": true,
     "active": true,
     "tbr": false
 }, {
@@ -376,7 +376,7 @@
     "comment": "",
     "parents": [],
     "description": "Í áfanganum er fjallað um vigra og hornaföll. Helstu efnisatriði: Vigrar og reikningur með þeim - Hornaföll - Hornafallareglur og sannanir þeirra - Jöfnur línu, hrings og sporbaugs - 2X2 fylki og notkun þeirra til að finna flatarmál þríhyrnings og leysa jöfnuhneppi",
-    "core": false,
+    "core": true,
     "active": true,
     "tbr": false
 }, {
@@ -386,7 +386,7 @@
     "comment": "",
     "parents": ["GAGN2HS05(BU)", "ROBO2RG05(AU)", "KEST2LG05(DU)", "KEST2WG05(DU)"],
     "description": "Nemendur sem eru að fara á 3. önn skulu velja einn af neðantöldum áföngum í aðalval og tvo í varaval.",
-    "core": true,
+    "core": false,
     "active": true,
     "tbr": true
 }, {
@@ -396,7 +396,7 @@
     "comment": "",
     "parents": [],
     "description": "Í áfanganum er fjallað um föll og diffrun þeirra. Helstu efnisatriði: - Föll og ferlar falla - Hliðrun falla, takmörkuð föll, einhalla föll , andhverfur falla, ýmsar tegundir falla - Markgildi og samfeldni - Snertill, diffurkvóti, afleiða - Ýmsar diffurreglur",
-    "core": false,
+    "core": true,
     "active": true,
     "tbr": false
 }]
