@@ -99,7 +99,7 @@ div.container {
     padding: 5px 5px;
     margin: 7px 7px;
     z-index: 10;
-    cursor: zoom-in;
+    cursor: pointer;
 }
 
 .afangi {
