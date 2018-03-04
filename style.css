@@ -301,8 +301,26 @@ div.onn3 {
   right: 20px;
   
   border: 0;
+  border-radius: 5px;
   background: var(--TEXT);
   color: var(--BAKG);
   padding: 5px 10px;
   font-size: 1.3rem;
+}
+
+.modal .close-button:hover {
+    background: var(--BAKG);
+    color: var(--TEXT);
+}
+
+.mafangi {
+    font-size: 0.9rem;
+    border-radius: 5px;
+    background: var(--TEXT);
+    color: var(--BAKG);
+}
+
+.mafangi:hover {
+    background: var(--BAKG);
+    color: var(--TEXT);    
 }

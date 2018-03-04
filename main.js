@@ -97,6 +97,7 @@ function teiknaParUndanfara() {
 mainDiv.addEventListener("click", synaModal);
 
 function synaModal(e) {
+    console.log(e);
     const id = e.target.id || e;
     const afangi = afangar.find(a => a.id === e.target.id);
     if (!afangi) return;
@@ -104,20 +105,25 @@ function synaModal(e) {
     document.getElementsByClassName("mnafn")[0].textContent = afangi.name;
     document.getElementsByClassName("mlysing")[0].textContent = afangi.description;
     document.getElementsByClassName("mcomment")[0].textContent = afangi.comment;
-    if (afangi.id === "VAL05") {
-        document.getElementsByClassName("mundanfarar")[0].textContent = `${afangi.parents.map(p => p.id).join(', ')}`;
-        document.getElementsByClassName("mlinkur")[0].textContent = '';
-    } else {
-        document.getElementsByClassName("mnumer")[0].textContent = afangi.id;
-        const undanfaraTexti = afangi.parents.length === 0 ? '' :
-            afangi.parents.length === 1 ? 'Undanfari: ' : 'Undanfarar: ';
-        document.getElementsByClassName("mundanfarar")[0].textContent = `${undanfaraTexti} ${afangi.parents.map(p => p.id).join(', ')}`;
-        document.getElementsByClassName("mlinkur")[0].href = afangi.link;
-        document.getElementsByClassName("mlinkur")[0].textContent = 'Sjá nánar á námskrá.is';
-    }
+    
+        // document.getElementsByClassName("mundanfarar")[0].textContent = `${afangi.parents.map(p => p.id).join(', ')}`;
+    
+
+    document.getElementsByClassName("mnumer")[0].textContent = afangi.id;
+    const undanfaraTexti = afangi.parents.length === 0 ? '' :
+        afangi.parents.length === 1 ? 'Undanfari: ' : 'Undanfarar: ';
+    //document.getElementsByClassName("mundanfarar")[0].textContent = `${undanfaraTexti} ${afangi.parents.map(p => p.id).join(', ')}`;
+    document.getElementsByClassName("mundanfarar")[0] = undanFararModal(afangi);
+    document.getElementsByClassName("mlinkur")[0].href = afangi.link;
+    document.getElementsByClassName("mlinkur")[0].textContent = 'Sjá nánar á námskrá.is';
+    
 
     document.getElementsByClassName("mcomment")[0].textContent = afangi.comment;
     if(afangi.core) document.getElementsByClassName("mcomment")[0].textContent = "Skylduáfangi.";
+
+    if (afangi.id === "VAL05") {
+        document.getElementsByClassName("mlinkur")[0].textContent = '';
+    }
 
 
     //console.log(document.getElementsByClassName("modal"));
@@ -128,6 +134,39 @@ function synaModal(e) {
     e.preventDefault();
 }
 
+
+function undanFararModal(afangi) {
+    const undanfaraDiv = document.getElementsByClassName('mundanfarar')[0];
+    undanfaraDiv.childNodes.forEach(c => c.remove());
+    undanfaraDiv.childNodes.forEach(c => c.remove());
+    
+    if(afangi.parents.length > 0) {
+        if(afangi.parents.length === 1) {
+            undanfaraDiv.textContent = "Undanfari:";
+        } else {
+            undanfaraDiv.textContent = "Undanfarar:"
+        }
+        if(afangi.id === "VAL05") {
+            undanfaraDiv.textContent = "";
+        }
+    }
+
+    afangi.parents.forEach(p => {
+        //console.log(p);
+        const undanfaraBtn = document.createElement('button');
+        undanfaraBtn.textContent = p.id;
+        undanfaraBtn.id = p.id;
+        undanfaraBtn.className = "mafangi";
+        //undanfaraBtn.className += ` ${p.id.substring(0,4)}`
+        
+        undanfaraBtn.addEventListener("click", synaModal);
+        //console.log(toString(undanfaraBtn));
+        undanfaraDiv.appendChild(undanfaraBtn);
+    });
+    //console.log(undanfaraDiv);
+    return undanfaraDiv;
+}
+
 document.getElementById("close-button").addEventListener("click", e => {
     document.getElementsByClassName("modal")[0].style.display = "none";
     //document.getElementById("yfir").classList.remove("modal-overlay");
@@ -135,7 +174,7 @@ document.getElementById("close-button").addEventListener("click", e => {
     isModal = false;
 });
 
-document.getElementById('chkUndanfara')
+/* document.getElementById('chkUndanfara')
     .addEventListener("click", e => {
         e.target.value = e.target.value === "Sýna meira..." ? "Sýna minna..." :
             "Sýna meira...";
@@ -145,7 +184,7 @@ document.getElementById('chkUndanfara')
                 u.style.display = 'none');
         teiknaParUndanfara();
     });
-
+ */
 /* function teiknaUndanfara() {
     const currentLines = Array.from(document.getElementsByClassName('leader-line'));
     currentLines.forEach(l => l.remove());
