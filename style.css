@@ -37,19 +37,19 @@ header {
 
 .haus {
     position: relative;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     align-content: center;
 }
 
-.takki-btn {
-    border-radius: 5px;
+.skylda-val {
+    position: relative;
     font-size: 1.2rem;
-    float: right;
+    align-content: center;
 }
 
 .linkar {
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 div.container {

@@ -123,6 +123,7 @@ function synaModal(e) {
 
     if (afangi.id === "VAL05") {
         document.getElementsByClassName("mlinkur")[0].textContent = '';
+        document.getElementsByClassName("mnumer")[0].textContent = '';
     }
 
 
