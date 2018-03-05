@@ -1,7 +1,6 @@
 const afangar = [];
 const allirAfangar = [];
 const mainDiv = document.getElementById('maingrid');
-
 let isModal = false;
 
 (function saekjaJson() {
@@ -10,12 +9,13 @@ let isModal = false;
         .then(json => {
             json.filter(j => j.active)
                 .forEach(afangi => afangar.push(new Afangi(afangi)));
-
             afangar.forEach(afangi => {
                 afangi.parents = afangi.parents.map(p => afangar.find(a => a.id === p));
-                synaDiv(afangi);
+                synaDiv(afangi);                
             });
+            opna();
             teiknaParUndanfara();
+            
         })
         .catch(e => console.log("villa:", e));
 })();
@@ -95,9 +95,9 @@ function teiknaParUndanfara() {
 }
 
 mainDiv.addEventListener("click", synaModal);
+const modal = document.getElementById('simpleModal');
 
 function synaModal(e) {
-    console.log(e);
     const id = e.target.id || e;
     const afangi = afangar.find(a => a.id === e.target.id);
     if (!afangi) return;
@@ -172,12 +172,34 @@ function undanFararModal(afangi) {
     return undanfaraDiv;
 }
 
-document.getElementById("close-button").addEventListener("click", e => {
+function lokaModal() {
     document.getElementsByClassName("modal")[0].style.display = "none";
     //document.getElementById("yfir").classList.remove("modal-overlay");
     mainDiv.addEventListener("click", synaModal);
     isModal = false;
-});
+}
+
+document.getElementById("close-button").addEventListener("click", lokaModal);
+
+function opna() {
+    const load_screen = document.getElementById("loada");
+    document.body.removeChild(load_screen);
+    const yfir = document.getElementById("yfir");
+    yfir.style.display = "block";    
+}
+
+/* window.addEventListener('click', e => {
+    if(e.target !== modal && isModal) {
+        lokaModal();
+    }
+}); */
+
+/* window.addEventListener("load", (e) => {
+    const load_screen = document.getElementById("loada");
+    document.body.removeChild(load_screen);
+    const yfir = document.getElementById("yfir");
+    yfir.style.display = "block";
+}); */
 
 /* document.getElementById('chkUndanfara')
     .addEventListener("click", e => {
