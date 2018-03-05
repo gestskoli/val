@@ -7,7 +7,7 @@
     --ROBO: rgba(250, 177, 160, 0.7);
     --VEFÞ: rgba(129, 236, 236, 0.7);
     --CORE: rgba(214, 48, 49, 0.7);
-    --VAL: rgba(240, 240, 240, 0.7);  
+    --VAL: rgba(240, 240, 240, 0.7);
     --EÐLI: rgba(255, 118, 117, 0.7);
     --STÆR: var(--EÐLI);
     --ONN1: rgba(108, 92, 231, 0.10);
@@ -15,8 +15,8 @@
     --ONN3: rgba(0, 184, 148, 0.10);
     --STRONG: rgba(214, 48, 49, 1.0);
     --LINK: rgba(9, 132, 227, 1.0);
-    --SAMH: rgba(0, 184, 148,1.0);
-    --BAKG: rgba(223, 230, 233,1.0);
+    --SAMH: rgba(0, 184, 148, 1.0);
+    --BAKG: rgba(223, 230, 233, 1.0);
     --TEXT: rgba(45, 52, 54, 1.0);
     --ANNIR: var(--ONN2);
 }
@@ -35,7 +35,6 @@ body {
 
 .loada {
     position: fixed;
-
     padding-top: 10%;
     top: 0px;
     opacity: 1;
@@ -50,48 +49,55 @@ body {
     margin: 100px auto 0;
     width: 70px;
     text-align: center;
-  }
-  
-  .spinner > div {
+}
+
+.spinner>div {
     width: 18px;
     height: 18px;
     background-color: #333;
-  
     border-radius: 100%;
     display: inline-block;
     -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
     animation: sk-bouncedelay 1.4s infinite ease-in-out both;
-  }
-  
-  .spinner .bounce1 {
+}
+
+.spinner .bounce1 {
     -webkit-animation-delay: -0.32s;
     animation-delay: -0.32s;
-  }
-  
-  .spinner .bounce2 {
+}
+
+.spinner .bounce2 {
     -webkit-animation-delay: -0.16s;
     animation-delay: -0.16s;
-  }
-  
-  @-webkit-keyframes sk-bouncedelay {
-    0%, 80%, 100% { -webkit-transform: scale(0) }
-    40% { -webkit-transform: scale(1.0) }
-  }
-  
-  @keyframes sk-bouncedelay {
-    0%, 80%, 100% { 
-      -webkit-transform: scale(0);
-      transform: scale(0);
-    } 40% { 
-      -webkit-transform: scale(1.0);
-      transform: scale(1.0);
+}
+
+@-webkit-keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0)
     }
-  }
+    40% {
+        -webkit-transform: scale(1.0)
+    }
+}
+
+@keyframes sk-bouncedelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+    }
+}
 
 header {
     display: block;
     text-align: center;
-
 }
 
 .haus {
@@ -115,19 +121,10 @@ header {
 div.container {
     display: grid;
     width: 100%;
-    
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
     grid-gap: 5px;
-    grid-template-areas: 
-        "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG" 
-        "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH" 
-        "onn3 empty1 FORR2HF empty2 empty2 VAL KEST2UN empty3 VEFÞ2VF" 
-        "FORK2FE FORR3JS FORR2GL ROBO2RG GAGN2HS KEST3CR KEST2LG KEST2WG VEFÞ2VÞ" 
-        "FORK2FT FORR3RR FORR3FL ROBO3RF GAGN2VG KEST3CS KEST3LN KEST3WN VEFÞ3VL" 
-        "FORK2FÞ FORR4CF FORR3NÞ FORR3FV GAGN3GS KEST3CN KEST3LS KEST3WS empty4" 
-        "empty5 STÆR3FM empty51 STÆR3RV empty7 EÐLI2GR empty6 empty6 empty6"
-
+    grid-template-areas: "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG" "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH" "onn3 empty1 FORR2HF empty2 empty2 VAL KEST2UN empty3 VEFÞ2VF" "FORK2FE FORR3JS FORR2GL ROBO2RG GAGN2HS KEST3CR KEST2LG KEST2WG VEFÞ2VÞ" "FORK2FT FORR3RR FORR3FL ROBO3RF GAGN2VG KEST3CS KEST3LN KEST3WN VEFÞ3VL" "FORK2FÞ FORR4CF FORR3NÞ FORR3FV GAGN3GS KEST3CN KEST3LS KEST3WS empty4" "empty5 STÆR3FM empty51 STÆR3RV empty7 EÐLI2GR empty6 empty6 empty6"
     /*         "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG"
         "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH"
         "onn3 empty1 FORR2HF empty2 empty2 VAL KEST2UN empty3 VEFÞ2VF"
@@ -251,7 +248,9 @@ div.onn2 {
 div.onn3 {
     grid-area: onn3;
     /* background: var(--ONN3); */
-}.VAL0 {
+}
+
+.VAL0 {
     background: var(--VAL);
 }
 
@@ -284,38 +283,30 @@ div.onn3 {
     background: var(--EÐLI);
 }
 
-@import 'https://fonts.googleapis.com/css?family=Prompt:400,700';
-
+/* @import 'https://fonts.googleapis.com/css?family=Prompt:400,700'; */
 .modal {
-  /* This way it could be display flex or grid or whatever also. */
-  display: none;
-  
-  /* Probably need media queries here */
-  width: 600px;
-  max-width: 100%;
-  
-  height: 400px;
-  max-height: 100%;
-  
-  position: fixed;
-  border-radius: 10px;
-  
-  z-index: 100;
-  
-  left: 50%;
-  top: 50%;
-  
-  /* Use this for centering if unknown width/height */
-  transform: translate(-50%, -50%);
-  
-  /* If known, negative margins are probably better (less chance of blurry text). */
-  /* margin: -200px 0 0 -200px; */
-  
-  background: white;
-  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.6);
+    /* This way it could be display flex or grid or whatever also. */
+    display: none;
+    /* Probably need media queries here */
+    width: 600px;
+    max-width: 100%;
+    height: 400px;
+    max-height: 100%;
+    position: fixed;
+    border-radius: 10px;
+    z-index: 100;
+    left: 50%;
+    top: 30%;
+    /* Use this for centering if unknown width/height */
+    transform: translate(-50%, -50%);
+    /* If known, negative margins are probably better (less chance of blurry text). */
+    /* margin: -200px 0 0 -200px; */
+    background: white;
+    box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.6);
 }
+
 .closed {
-  display: none;
+    display: none;
 }
 
 .mnafn {
@@ -329,49 +320,51 @@ div.onn3 {
     text-align: center;
 }
 
-.mlysing, .mundanfarar, .mcomment, .mlinkur {
+.mlysing,
+.mundanfarar,
+.mcomment,
+.mlinkur {
     font-size: 1rem;
     text-align: left;
     margin: 20px;
 }
 
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 50;
-  opacity: 1;
-  background: white;
+    display: none;
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    opacity: 0.8;
+    background: var(--TEXT);
 }
+
 .modal-guts {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  padding: 20px 50px 20px 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 20px 50px 20px 20px;
 }
 
 .modal .close-button {
-  position: absolute;
-  
-  /* don't need to go crazy with z-index here, just sits over .modal-guts */
-  z-index: 1;
-  
-  bottom: 5%;
-  
-  /* needs to look OK with or without scrollbar */
-  right: 20px;
-  
-  border: 0;
-  border-radius: 5px;
-  background: var(--TEXT);
-  color: var(--BAKG);
-  padding: 5px 10px;
-  font-size: 1.3rem;
+    position: absolute;
+    /* don't need to go crazy with z-index here, just sits over .modal-guts */
+    z-index: 1;
+    bottom: 5%;
+    /* needs to look OK with or without scrollbar */
+    right: 20px;
+    border: 0;
+    border-radius: 5px;
+    background: var(--TEXT);
+    color: var(--BAKG);
+    padding: 5px 10px;
+    font-size: 1.3rem;
 }
 
 .modal .close-button:hover {
@@ -388,5 +381,5 @@ div.onn3 {
 
 .mafangi:hover {
     background: var(--BAKG);
-    color: var(--TEXT);    
+    color: var(--TEXT);
 }

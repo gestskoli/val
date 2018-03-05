@@ -1,6 +1,7 @@
 const afangar = [];
 const allirAfangar = [];
 const mainDiv = document.getElementById('maingrid');
+const modaloverlay = document.getElementsByClassName('modal-overlay')[0];
 let isModal = false;
 
 (function saekjaJson() {
@@ -102,6 +103,7 @@ function synaModal(e) {
     const afangi = afangar.find(a => a.id === e.target.id);
     if (!afangi) return;
     isModal = true;
+    modaloverlay.style.direction = 'block';
     document.getElementsByClassName("mnafn")[0].textContent = afangi.name;
     document.getElementsByClassName("mlysing")[0].textContent = afangi.description;
     document.getElementsByClassName("mcomment")[0].textContent = afangi.comment;
@@ -129,6 +131,15 @@ function synaModal(e) {
 
     //console.log(document.getElementsByClassName("modal"));
     document.getElementsByClassName("modal")[0].style.display = "block";
+
+
+    modaloverlay.style.display = 'block';
+    window.addEventListener('click', e => {
+        if(e.target === modaloverlay) {
+            console.log(e.target);
+            lokaModal();
+        }
+    }); 
 
     mainDiv.removeEventListener("click", synaModal);
     //document.getElementById("maingrid").opacity = "0.2";
@@ -174,6 +185,7 @@ function undanFararModal(afangi) {
 
 function lokaModal() {
     document.getElementsByClassName("modal")[0].style.display = "none";
+    modaloverlay.style.display = 'none';
     //document.getElementById("yfir").classList.remove("modal-overlay");
     mainDiv.addEventListener("click", synaModal);
     isModal = false;
@@ -188,11 +200,7 @@ function opna() {
     yfir.style.display = "block";    
 }
 
-/* window.addEventListener('click', e => {
-    if(e.target !== modal && isModal) {
-        lokaModal();
-    }
-}); */
+
 
 /* window.addEventListener("load", (e) => {
     const load_screen = document.getElementById("loada");
