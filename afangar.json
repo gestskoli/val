@@ -127,7 +127,7 @@
     "parents": ["FORR2HF05(CU)"],
     "description": "Áfanginn er framhald FORR3CG05DU og hér er áhersla á föll/aðferðir og hlutbundna forritun. Unnið er með utanaðkomandi gögn svo sem textaskrár og gagnagrunna. Forritun með frávikum (e. exceptions) búin til og notuð. Einnig er unnið með marga klasa í sama verkefni.",
     "core": false,
-    "active": true,
+    "active": false,
     "tbr": true
 }, {
     "id": "FORR3RR05(DU)",
@@ -197,7 +197,7 @@
     "parents": ["VEFÞ2VÞ05(DU)", "FORR3JS05(DU)"],
     "description": "Í áfanganum fást nemendur við hinar ýmsu hliðar í vefþróun. Unnið er með tækni og hugmyndir sem nemendur byggja inn í sínar veflausnir. Kynntar eru vefþjónustur (e. API) og hvernig þær eru notaðar með veflausnum. Notast er við hlutbundna aðferðafræði og MVC mynstur í vefforritun ásamt notkun beininga (e. routing). Söfn og ýmis forritunarmál eru skoðuð og notuð til að einfalda verk og við þróun veflausna.",
     "core": false,
-    "active": true,
+    "active": false,
     "tbr": true
 }, {
     "id": "ROBO2RG05(AU)",
@@ -353,7 +353,7 @@
     "id": "FORR3NÞ05(DU)",
     "name": "Netforritun og  þráðavinnsla",
     "link": "https://namskra.is/courses/5919864062933a4e92054385",
-    "comment": "Áfangi eingöngu í boði fyrir  þá sem hafa lokið FOR2C3U í C#",
+    "comment": "",
     "parents": ["FORR2HF05(CU)", "KEST2UN05(CU)"],
     "description": "Áfanginn er verkefnadrifinn. Smíðaður er fjölþráða netleikur og sú tækni og þekking sem til þarf er kynnt, skoðuð og æfð samhliða framvindu verkefnisins. Ætlast er til að nemendur sýni frumkvæði og sjálfstæði í vinnubrögðum.",
     "core": false,
@@ -399,4 +399,14 @@
     "core": true,
     "active": true,
     "tbr": false
+}, {
+    "id": "FORR3CG05(DU)",
+    "name": "C#/C++ og gagnagrindur",
+    "link": "https://namskra.is/courses/5919a6f862933a4e92054456",
+    "comment": "",
+    "parents": ["FORR2HF05(CU)"],
+    "description": "Í áfanganum er farið í hlutbundið forritunarmál kennt frá grunni, en gert er ráð fyrir að nemendur þekki annað forritunarmál nokkuð vel, t.d. Python. Farið er ítarlega í: breytur, segðir, if setningar, lykkjur, föll/aðferðir, fylki og lista, strengjavinnsla skoðuð, klasar og skráarvinnsla. Einnig er hlutbundin forritun skoðuð ítarlega.",
+    "core": false,
+    "active": true,
+    "tbr": true
 }]
