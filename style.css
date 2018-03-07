@@ -124,7 +124,13 @@ div.container {
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: auto;
     grid-gap: 5px;
-    grid-template-areas: "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG" "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH" "onn3 empty1 FORR2HF empty2 empty2 VAL KEST2UN empty3 VEFÞ2VF" "FORK2FE FORR3JS FORR2GL ROBO2RG GAGN2HS KEST3CR KEST2LG KEST2WG VEFÞ2VÞ" "FORK2FT FORR3RR FORR3FL ROBO3RF GAGN2VG KEST3CS KEST3LN KEST3WN VEFÞ3VL" "FORK2FÞ FORR3CG FORR3NÞ FORR3FV GAGN3GS KEST3CN KEST3LS KEST3WS empty4" "empty5 STÆR3FM empty51 STÆR3RV empty7 EÐLI2GR empty6 empty6 empty6"
+    grid-template-areas: "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG" 
+    "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH" 
+    "onn3 empty1 FORR2HF empty2 empty2 VAL KEST2UN empty3 VEFÞ2VF" 
+    "FORK2FE FORR3JS FORR2GL ROBO2RG GAGN2HS KEST3CR KEST2LG KEST2WG VEFÞ2VÞ" 
+    "FORK2FT FORR3CG FORR3FL ROBO3RF GAGN2VG KEST3CS KEST3LN KEST3WN VEFÞ3VL" 
+    "FORK2FÞ FORR3RR FORR3NÞ FORR3FV GAGN3GS KEST3CN KEST3LS KEST3WS empty4" 
+    "empty5 STÆR3FM empty51 STÆR3RV empty7 EÐLI2GR empty6 empty6 empty6"
     /*         "onn1 empty1 FORR1FG empty empty empty KEST1TR empty3 VEFÞ1VG"
         "onn2 empty1 FORR2FA emptya GAGN1NG emptyb KEST2VJ empty3 VEFÞ2VH"
         "onn3 empty1 FORR2HF empty2 empty2 VAL KEST2UN empty3 VEFÞ2VF"
