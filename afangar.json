@@ -354,7 +354,7 @@
     "name": "Netforritun og  þráðavinnsla",
     "link": "https://namskra.is/courses/5919864062933a4e92054385",
     "comment": "",
-    "parents": ["FORR3CG05(DU)", "KEST2UN05(CU)"],
+    "parents": ["FORR2GL05(DU)", "KEST2UN05(CU)"],
     "description": "Áfanginn er verkefnadrifinn. Smíðaður er fjölþráða netleikur og sú tækni og þekking sem til þarf er kynnt, skoðuð og æfð samhliða framvindu verkefnisins. Ætlast er til að nemendur sýni frumkvæði og sjálfstæði í vinnubrögðum.",
     "core": false,
     "active": true,
