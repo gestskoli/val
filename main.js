@@ -3,6 +3,8 @@ const allirAfangar = [];
 const mainDiv = document.getElementById('maingrid');
 const modaloverlay = document.getElementsByClassName('modal-overlay')[0];
 let isModal = false;
+let linur = [];
+let serhaefing = false;
 
 (function saekjaJson() {
     fetch("afangar.json")
@@ -14,12 +16,50 @@ let isModal = false;
                 afangi.parents = afangi.parents.map(p => afangar.find(a => a.id === p));
                 synaDiv(afangi);                
             });
+            saekjaLinur();
             opna();
             teiknaParUndanfara();
             
         })
         .catch(e => console.log("villa:", e));
 })();
+
+function saekjaLinur() {
+    fetch("linur.json")
+        .then(res => res.json())
+        .then(json => {
+            json.forEach(lina => linur.push(lina));
+        })
+        .catch(e => console.log("villa: ", e));
+}
+
+function synaLinu(sender) {
+
+    if(sender === "kest") {
+        serhaefing = true;
+        console.log("kest");
+        allirAfangar.forEach(a => linur[1].courses.includes(a.id) || a.className.includes("core") ? a.style.opacity = 1.0 :
+                        a.style.opacity = 0.3);
+    } else if(sender === "leik") {
+        serhaefing = true;
+        console.log("leik");
+        allirAfangar.forEach(a => linur[0].courses.includes(a.id) || a.className.includes("core") ? a.style.opacity = 1.0 :
+                        a.style.opacity = 0.3);
+    } else if(sender === "rob") {
+        serhaefing = true;
+        allirAfangar.forEach(a => linur[2].courses.includes(a.id) || a.className.includes("core") ? a.style.opacity = 1.0 :
+                        a.style.opacity = 0.3);
+    } else if(sender === "vef") {
+        serhaefing = true;
+        allirAfangar.forEach(a => linur[3].courses.includes(a.id) || a.className.includes("core") ? a.style.opacity = 1.0 :
+                        a.style.opacity = 0.3);
+    } else {
+        serhaefing = false;
+        allirAfangar.forEach(a => a.style.opacity = 1.0);
+        console.log("almenn");
+
+    }
+}
 
 function synaDiv(afangi) {
     const btn = document.createElement('button');
@@ -82,14 +122,16 @@ function teiknaParUndanfara() {
             // curDiv.dataTooltip = afangi.description;
             if (!isModal) {
                 undanfaraLinur.forEach(l => l.show("draw"));
-                allirAfangar.forEach(a => undanfaraAfangar.has(a) ? a.style.opacity = 1 :
-                    a.style.opacity = 0.3);
+                if(!serhaefing) {
+                    allirAfangar.forEach(a => undanfaraAfangar.has(a) ? a.style.opacity = 1 :
+                        a.style.opacity = 0.3);
+                }
             }
         });
 
         curDiv.addEventListener("mouseleave", e => {
             undanfaraLinur.forEach(l => l.hide());
-            allirAfangar.forEach(a => a.style.opacity = 1.0);
+            if(!serhaefing) allirAfangar.forEach(a => a.style.opacity = 1.0);
         });
     });
 
