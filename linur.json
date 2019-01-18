@@ -1,0 +1,57 @@
+[
+    {
+        "id": "Tölvuleikjagerð",
+        "courses": [
+            "FORR2GL05(DU)",
+            "FORR3FL05(EU)",
+            "FORR3NÞ05(DU)",
+            "FORR3CG05(DU)",
+            "FORR3JS05(DU)",
+            "FORR3RR05(DU)",
+            "GAGN2HS05(BU)",
+            "VEFÞ2VÞ05(DU)",
+            "FORR3FV05(EU)"
+        ]
+    },
+    {
+        "id": "Kerfisstjórnun",
+        "courses": [
+            "KEST3CR05(EU)",
+            "KEST3CS05(FU)",
+            "KEST3CN05(GU)",
+            "KEST2WG05(DU)",
+            "KEST3WN05(EU)",
+            "KEST3WS05(FU)",
+            "KEST2LG05(DU)",
+            "KEST3LN05(EU)",
+            "KEST3LS05(FU)"
+        ]
+    },
+    {
+        "id": "Þjarkar",
+        "courses": [
+            "ROBO2RG05(AU)",
+            "ROBO3RF05(BU)",
+            "FORR3CG05(DU)",
+            "GAGN2HS05(BU)",
+            "GAGN2VG05(CU)",
+            "KEST2LG05(DU)",
+            "KEST3LN05(EU)",
+            "FORR3RR05(DU)",
+            "VEFÞ2VÞ05(DU)"
+        ]
+    },   
+    {
+        "id": "Vefforritun",
+        "courses": [
+            "GAGN2HS05(BU)",
+            "GAGN2VG05(CU)",
+            "GAGN3GS05(DU)",
+            "VEFÞ2VÞ05(DU)",
+            "FORR3JS05(DU)",
+            "FORR3FV05(EU)",
+            "KEST2LG05(DU)",
+            "KEST3LN05(EU)"
+        ]
+    }
+]
