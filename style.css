@@ -33,6 +33,17 @@ body {
     display: none;
 }
 
+.ivinnslu {
+    opacity: 0.5;
+    font-size: 10rem;
+    color: red;
+    position: fixed;
+    top: 20%;
+    left: 10%;
+    transform: rotate(-5deg);
+    z-index: 10;
+}
+
 .loada {
     position: fixed;
     padding-top: 10%;
